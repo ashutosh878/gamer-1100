@@ -1,17 +1,42 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>email sender</title>
+
+<meta charset="utf-8" />
+<title>Untitled</title>
+<style>
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css");
+
+h1 {
+	text-align: center;
+	margin: 35px 0 20px 0 !important;
+}</style>
+<script src="http://dabblet.com/code/prefixfree.min.js"></script>
+<script>
+if (parent === window) {
+	document.addEventListener('DOMContentLoaded', function() {
+		// alert('Hello world!');		
+	});
+}
+</script>
 </head>
-<body>
-<form action="https://formsubmit.co/chaubeyvijayshanker3@.com" method="POST">
-	<input type="hidden" name="_subject" value="thanks for watching!">
-	<input type="email" name="email" placeholder="Email Address">
-	<input type="hidden" name="_next" value="https://ania-kubow.com/thanks.html">
-     <input type="text" name="name" required>
-    
-     <button type="submit">Send</button>
-</form>
-</body>
+<body><div class="container">
+    <h1>FormSubmit Demo</h1>
+    <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+        <div class="form-group">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+    </form>
+</div></body>
 </html>
